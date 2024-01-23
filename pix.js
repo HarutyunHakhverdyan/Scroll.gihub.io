@@ -75,7 +75,7 @@ app.stage.addChild(container2);
                  arrowRight.interactive = true; 
                  arrowRight.buttonMode = true;
                  arrowRight.on('click',onClickRight)
-                 arrowRight.on('click',onClickRight)
+                 arrowRight.on('tap',onClickRight)
                  container2.addChild(arrowRight)
            let arrowLeft= new PIXI.Sprite(textureArrow)
                 arrowLeft.scale.x=0.05
