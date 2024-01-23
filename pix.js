@@ -75,6 +75,7 @@ app.stage.addChild(container2);
                  arrowRight.interactive = true; 
                  arrowRight.buttonMode = true;
                  arrowRight.on('click',onClickRight)
+                 arrowRight.on('click',onClickRight)
                  container2.addChild(arrowRight)
            let arrowLeft= new PIXI.Sprite(textureArrow)
                 arrowLeft.scale.x=0.05
@@ -85,7 +86,8 @@ app.stage.addChild(container2);
                  container1.addChild(arrowLeft)
                  arrowLeft.interactive = true; 
                  arrowLeft.buttonMode = true;
-                 arrowLeft.on('click',onClickLeft)    
+                 arrowLeft.on('click',onClickLeft) 
+                 arrowLeft.on('tap',onClickLeft)
            let click
            let num=0 
            let lastX=arrRect[arrRect.length-1].x
